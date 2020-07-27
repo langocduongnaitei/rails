@@ -1,0 +1,13 @@
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+.byebug_history
+config/database.yml
+test/test_helper.rb
