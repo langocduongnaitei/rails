@@ -1,5 +1,8 @@
-# This is rubocop configuration file for Framgia's coding style. Enabling and disabling is configured
+# This is rubocop configuration file for Sun-Asterisk's coding style. Enabling and disabling is configured
 # in separate files. This file adds all other parameters apart from Enabled.
+
+# Add this to load Rails extension for rubocop
+require: rubocop-rails
 
 # Put the following files into the same directory as this file.
 inherit_from:
@@ -10,7 +13,10 @@ inherit_from:
 AllCops:
   # Include gemspec and Rakefile
   Include:
+    - 'app/**/*'
+    - 'lib/**/*'
     - '**/*.gemspec'
+    - 'Gemfile'
   Exclude:
     - 'vendor/**/*'
     - 'config/unicorn.rb'
@@ -19,6 +25,12 @@ AllCops:
     - 'spec/**/*'
     - 'script/rails'
     - 'config/**/*'
+    - 'app/views/**/*'
+    - 'app/assets/**/*'
+    - 'app/javascript/**/*'
+    - '.idea/**/*'
+    - '**/.DS_Store'
+    - '**/.keep'
 
 # Indent private/protected/public as deep as method definitions
 Layout/AccessModifierIndentation:
@@ -256,7 +268,7 @@ Style/HashSyntax:
     - hash_rockets
 
 # Checks the indentation of the first key in a hash literal.
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   # The value `special_inside_parentheses` means that hash literals with braces
   # that have their opening brace on the same line as a surrounding opening
   # round parenthesis, shall have their first key indented relative to the
