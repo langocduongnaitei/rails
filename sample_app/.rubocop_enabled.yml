@@ -189,7 +189,7 @@ Naming/FileName:
   Description: "Use snake_case for source file names."
   Enabled: true
 
-Style/FlipFlop:
+Lint/FlipFlop:
   Description: "Checks for flip flops"
   Enabled: true
 
@@ -233,13 +233,13 @@ Layout/IndentationWidth:
   Description: "Use 2 spaces for indentation."
   Enabled: true
 
-Layout/IndentArray:
+Layout/IndentFirstArrayElement:
   Description: >-
                  Checks the indentation of the first element in an array
                  literal.
   Enabled: true
 
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   Description: "Checks the indentation of the first key in a hash literal."
   Enabled: true
 
@@ -487,10 +487,6 @@ Layout/SpaceAroundOperators:
   Description: "Use spaces around operators."
   Enabled: true
 
-Layout/SpaceAroundKeyword:
-  Description: "Put a space before the modifier keyword."
-  Enabled: true
-
 Layout/SpaceInsideHashLiteralBraces:
   Description: "Use spaces inside hash literal braces - or don't."
   Enabled: true
@@ -676,12 +672,6 @@ Lint/ShadowingOuterLocalVariable:
   Description: >-
                  Do not use the same name as outer local variable
                  for block arguments or block local variables.
-  Enabled: true
-
-Layout/SpaceBeforeFirstArg:
-  Description: >-
-                 Put a space between a method name and the first argument
-                 in a method call without parentheses.
   Enabled: true
 
 Lint/StringConversionInInterpolation:
