@@ -14,3 +14,19 @@ vi:
       help_content1: "Rails Tutorial."
       help_content2: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem trong sách "
       help_content3: "Ruby on Rails Tutorial."
+  users:
+    helpers:
+      link_image: "https://secure.gravatar.com/avatar/%{gravatar_id}"
+    new:
+      signup: "ĐĂNG KÝ"
+      username: "Tài khoản"
+      email: "Đỉa chỉ mail"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      olduser: "Bạn đã có tài khoản? "
+      login: "Bấm vào đây !!"
+    create:
+      flash: Chào mừng đến với chúng tôi, %{username}!
+    show:
+      flash: "Không tìm thấy người dùng!"
+      unauthorized: "Bạn phải đăng nhập trước!!"

@@ -14,3 +14,19 @@ en:
       help_content1: "Rails Tutorial Help page."
       help_content2: "To get help on this sample app, see the "
       help_content3: "Ruby on Rails Tutorial book."
+  users:
+    helpers:
+      link_image: "https://secure.gravatar.com/avatar/%{gravatar_id}"
+    new:
+      signup: "Sign Up"
+      username: "Username"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirm Password"
+      olduser: "Already registered? "
+      login: "Click here !!"
+    create:
+      flash: Welcome to the Sample App, %{username}!
+    show:
+      flash: "User not found !"
+      unauthorized: "You must be logged in first !!"
