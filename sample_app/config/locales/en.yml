@@ -28,18 +28,21 @@ en:
     form:
       signup: "Sign Up"
     new:
-      signup: "Sign Up"
+      heading: "Sign Up"
       username: "Username"
       email: "Email"
       password: "Password"
       password_confirmation: "Confirm Password"
       olduser: "Already registered? "
       login: "Click here !!"
+      create: "Create account"
+      signup_title: "Sign up"
     create:
       flash: Welcome to the Sample App, %{username}!
     show:
       flash: "User not found !"
       unauthorized: "You must be logged in first !!"
+
   sessions:
     new:
       log_in: Log in
@@ -59,6 +62,18 @@ en:
     you_sure: "You sure?"
     user_deleted: "User deleted"
     delete_danger: "Can not delete user"
+    account_activated: "Account activated!"
+    invalid_activation_link: "Invalid activation link"
+    account_activation: "Account activation"
+    account_not_activated: "Account not activated. Check your email for the activation link."
+    password_reset: "Password reset"
+    click_the_link_blow: "To reset your password click the link below:"
+    expire_in: "This link will expire in two hours."
+    if_you_did_not_request: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    cant_be_empty: "can't be empty"
+    password_has_been_reset: "Password has been reset."
+    can_not_reset_password: "Can not reset password"
+    password_reset_has_expired: "Password reset has expired."
   login:
     new_user: "New user?"
     login_danger: "Please login"
@@ -88,3 +103,8 @@ en:
       previous: "&lsaquo; Prev"
       next: "Next &rsaquo;"
       truncate: "&hellip;"
+  mails:
+    greeting: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account: "
+    activate: "Activate"
+    please_activate: "Please check your email to activate your account."

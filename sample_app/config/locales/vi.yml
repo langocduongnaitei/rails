@@ -28,13 +28,15 @@ vi:
     form:
       signup: "ĐĂNG KÝ"
     new:
-      signup: "ĐĂNG KÝ"
+      heading: "ĐĂNG KÝ"
       username: "Tài khoản"
       email: "Đỉa chỉ mail"
       password: "Mật khẩu"
       password_confirmation: "Xác nhận mật khẩu"
       olduser: "Bạn đã có tài khoản? "
       login: "Bấm vào đây !!"
+      create: "Tạo tài khoản"
+      signup_title: "Đăng ký"
     create:
       flash: Chào mừng đến với chúng tôi, %{username}!
     show:
@@ -59,6 +61,18 @@ vi:
     you_sure: "Bạn chắc chứ?"
     user_deleted: "Người dùng đã được xóa"
     delete_danger: "Không thể xóa người dùng"
+    account_activated: "Tài khoản đã được kích hoạt"
+    invalid_activation_link: "Đường dẫn kích hoạt không hoạt dộng"
+    account_activation: "Kích hoạt tài khoản"
+    account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra mail để thấy link kích hoạt"
+    password_reset: "Đặt lại mật khẩu"
+    click_the_link_blow: "Nhấn vào liên kết dưới đây để đặt lại mật khẩu:"
+    expire_in: "Đường đẫn sẽ hết hạn sau hai tiếng"
+    if_you_did_not_request: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+    cant_be_empty: "Không để trống"
+    password_has_been_reset: "Mật khẩu đã được đổi"
+    can_not_reset_password: "Không thể đặt lại mật khẩu"
+    password_reset_has_expired: "Hết hạn đổi mật khẩu"
   login:
     new_user: "Người dùng mới?"
     login_danger: "Hãy đăng nhập"
@@ -88,3 +102,8 @@ vi:
       previous: "&lsaquo; Trước"
       next: "Sau &rsaquo;"
       truncate: "&hellip;"
+  mails:
+    greeting: "Chào"
+    welcome: "Chào mừng bạn đến với ứng dụng mẫu, hãy kích hoạt tài khoản bằng đường dẫn sau: "
+    activate: "Kích hoạt"
+    please_activate: "Kiểm tra email để kích hoạt tài khoản của bạn."
