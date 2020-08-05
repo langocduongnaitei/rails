@@ -2,9 +2,10 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.user.email.email_regex
   USERS_PARAMS = %i(name email password password_confirmation).freeze
 
-  attr_accessor :remember_token
+  attr_accessor :remember_token, :activation_token
 
   before_save :downcase_email
+  before_create :create_activation_digest
 
   validates :name, presence: true,
     length: {maximum: Settings.user.name.max_length}
@@ -13,7 +14,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-    length: {minimum: Settings.user.password.min_length}
+    length: {minimum: Settings.user.password.min_length}, allow_nil: true
 
   has_secure_password
 
@@ -52,5 +53,10 @@ class User < ApplicationRecord
 
   def downcase_email
     email.downcase!
+  end
+
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest(activation_token)
   end
 end

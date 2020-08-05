@@ -8,6 +8,7 @@ vi:
       home_content0: "Đây là trang chủ cho ứng dụng mẫu"
       home_content1: "Ruby on Rails"
       home_content2: "Ứng dụng mẫu"
+      sign_up_now!: "Đăng ký ngay"
     help:
       help_title: "Trợ giúp"
       help_content0: "Nhận trợ giúp về hướng dẫn RoR tại trang "
@@ -24,6 +25,8 @@ vi:
   users:
     helpers:
       link_image: "https://secure.gravatar.com/avatar/%{gravatar_id}"
+    form:
+      signup: "ĐĂNG KÝ"
     new:
       signup: "ĐĂNG KÝ"
       username: "Tài khoản"
@@ -46,3 +49,42 @@ vi:
       sign_up_now: Đăng ký ngay
       error_message: Email hoặc mật khẩu không hợp lệ
       sign_up_failed: Đăng ký không thành công
+  shared:
+    success: "Chào mừng đến với Sample App!"
+    danger: "Đăng kí tài khoản bị lỗi"
+    user_not_found: "Không tìm thấy người dùng"
+    the_form_contains: "Biểu mẫu chứa "
+    error: "lỗi"
+    delete: "Xoá"
+    you_sure: "Bạn chắc chứ?"
+    user_deleted: "Người dùng đã được xóa"
+    delete_danger: "Không thể xóa người dùng"
+  login:
+    new_user: "Người dùng mới?"
+    login_danger: "Hãy đăng nhập"
+  session:
+    success_login_notify: "Đăng nhập thành công"
+    faild_login_notify: "Email hoặc mật khẩu bị sai"
+    users: "Danh sách người dùng"
+  btn:
+    profile_btn: "Hồ sơ"
+    setting_btn: "Cài đặt"
+    log_out_btn: "Đăng xuất"
+    log_in_btn: "Đăng nhập"
+    account: "Tài khoản"
+    users: "Người dùng"
+    remember: "Nhớ tôi ở trên máy tính này"
+  edit:
+    title: "Chỉnh sửa thông tin"
+    update: "Cập nhật hồ sơ của bạn"
+    save: "Lưu thay đổi"
+    change: "Chỉnh sửa"
+    edit_success: "Cập nhật thành công"
+    edit_danger: "Không thể cập nhật thông tin"
+  views:
+    pagination:
+      first: "&laquo; Đầu"
+      last: "Cuối &raquo;"
+      previous: "&lsaquo; Trước"
+      next: "Sau &rsaquo;"
+      truncate: "&hellip;"
