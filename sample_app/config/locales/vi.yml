@@ -14,6 +14,13 @@ vi:
       help_content1: "Rails Tutorial."
       help_content2: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem trong sách "
       help_content3: "Ruby on Rails Tutorial."
+  layouts:
+    header:
+      account: Tài khoản
+      users: Người dùng
+      profile: Trang cá nhân
+      settings: Cài đặt
+      log_out: Đăng xuất
   users:
     helpers:
       link_image: "https://secure.gravatar.com/avatar/%{gravatar_id}"
@@ -30,3 +37,12 @@ vi:
     show:
       flash: "Không tìm thấy người dùng!"
       unauthorized: "Bạn phải đăng nhập trước!!"
+  sessions:
+    new:
+      log_in: Đăng nhập
+      new_user: Tạo tài khoản mới?
+      email: Địa chỉ email
+      password: Mật khẩu
+      sign_up_now: Đăng ký ngay
+      error_message: Email hoặc mật khẩu không hợp lệ
+      sign_up_failed: Đăng ký không thành công
