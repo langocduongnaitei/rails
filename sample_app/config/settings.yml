@@ -1,6 +1,8 @@
 home_page: "https://www.railstutorial.org/"
 help_page: "https://www.railstutorial.org/help"
 book_page: "https://www.railstutorial.org/book"
+gravatar_email: "
+  https://gravatar.com/emails"
 user:
   name:
     min_length: 3
@@ -11,3 +13,6 @@ user:
   password:
     min_length: 6
   checkbox_value: "1"
+  ava_size: 80
+  ava_small_size: 50
+pagination: 10
