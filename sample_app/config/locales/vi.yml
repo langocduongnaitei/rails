@@ -88,6 +88,8 @@ vi:
     account: "Tài khoản"
     users: "Người dùng"
     remember: "Nhớ tôi ở trên máy tính này"
+    submit: "Submit"
+    forgot_password: "Quên mật khẩu"
   edit:
     title: "Chỉnh sửa thông tin"
     update: "Cập nhật hồ sơ của bạn"
@@ -107,3 +109,11 @@ vi:
     welcome: "Chào mừng bạn đến với ứng dụng mẫu, hãy kích hoạt tài khoản bằng đường dẫn sau: "
     activate: "Kích hoạt"
     please_activate: "Kiểm tra email để kích hoạt tài khoản của bạn."
+    email_send: "Đã gửi email thay đổi mật khẩu"
+    send_fail: "Không tìm thấy địa chỉ email"
+  password_reset:
+    title: "Đặt lại mật khẩu"
+    email: "Email"
+    password: "Mật khẩu"
+    confirmation: "Nhập lại mật khẩu"
+    update_password: "Cập nhật mật khẩu"

@@ -88,7 +88,8 @@ en:
     account: "Account"
     users: "Users"
     remember: "Remember me on this computer"
-
+    submit: "Submit"
+    forgot_password: "Forgot Password"
   edit:
     title: "Edit user"
     update: "Update your profile"
@@ -108,3 +109,11 @@ en:
     welcome: "Welcome to the Sample App! Click on the link below to activate your account: "
     activate: "Activate"
     please_activate: "Please check your email to activate your account."
+    email_send: "Email sent with password reset instructions"
+    send_fail: "Email address not found"
+  password_reset:
+    title: "Reset passoword"
+    email: "Email"
+    password: "Password"
+    confirmation: "Confirmation"
+    update_password: "Update password"
