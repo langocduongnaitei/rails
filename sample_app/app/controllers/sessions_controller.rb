@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       flash[:success] = t "session.success_login_notify"
       remember_user user
     else
-      flash[:danger] = t "sessions.new.error_message"
+      flash[:danger] = t "session.failed_login_notify"
       render :new
     end
   end
@@ -20,8 +20,13 @@ class SessionsController < ApplicationController
   private
 
   def remember_user user
-    log_in user
-    params[:session][:remember_me] == Settings.user.checkbox_value ? remember(user) : forget(user)
-    redirect_back_or user
+    if user.activated?
+      log_in user
+      params[:session][:remember_me] == Settings.user.checkbox_value ? remember(user) : forget(user)
+      redirect_back_or user
+    else
+      flash[:warning] = t "shared.account_not_activated"
+      redirect_to root_url
+    end
   end
 end

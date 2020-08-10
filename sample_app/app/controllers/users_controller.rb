@@ -14,11 +14,10 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new user_params
-
     if @user.save
-      log_in @user
-      flash[:success] = t "shared.success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "mails.please_activate"
+      redirect_to root_url
     else
       flash[:danger] = t "shared.danger"
       render :new
@@ -59,7 +58,7 @@ class UsersController < ApplicationController
 
   def find_user
     @user = User.find_by id: params[:id]
-    return if @user
+    return if @user&.activated
 
     flash[:danger] = t ".flash"
     redirect_to root_path
