@@ -15,4 +15,5 @@ user:
   checkbox_value: "1"
   ava_size: 80
   ava_small_size: 50
+  password_reset_expired: 2
 pagination: 10
