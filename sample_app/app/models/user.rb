@@ -17,6 +17,7 @@ class User < ApplicationRecord
     length: {minimum: Settings.user.password.min_length}, allow_nil: true
 
   has_secure_password
+  has_many :microposts, dependent: :destroy
 
   class << self
     def digest string
@@ -65,6 +66,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.user.password_reset_expired.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   def forget

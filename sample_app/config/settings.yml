@@ -16,4 +16,25 @@ user:
   ava_size: 80
   ava_small_size: 50
   password_reset_expired: 2
+content_max_length: 150
 pagination: 10
+micropost:
+  size: 50
+  image:
+    size: 5
+    resize_to_limit:
+      - 500
+      - 500
+  types: "image/jpeg,image/gif,image/png"
+shared:
+  user_info_length: 50
+pages:
+  limit: 5
+files:
+  pic_resize: 500
+  pic_size: 5
+image:
+  valid_input: image/jpeg,image/gif,image/png
+static_pages:
+  home:
+    image_size: 200px

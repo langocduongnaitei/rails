@@ -25,7 +25,10 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find params[:id]
+    @microposts = @user.microposts.page(params[:page]).per Settings.pagination
+    return if @user&.activated
+
+    redirect_to root_path
   end
 
   def edit; end
@@ -62,14 +65,6 @@ class UsersController < ApplicationController
 
     flash[:danger] = t ".flash"
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "login.login_danger"
-    redirect_to login_url
   end
 
   def correct_user
