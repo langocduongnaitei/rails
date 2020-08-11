@@ -17,6 +17,15 @@ class User < ApplicationRecord
     length: {minimum: Settings.user.password.min_length}, allow_nil: true
 
   has_secure_password
+  has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+                                  foreign_key: follower_id,
+                                  dependent: :destroy, inverse_of: :follower
+  has_many :passive_relationships, class_name: Relationship.name,
+                                  foreign_key: followed_id,
+                                  dependent: :destroy, inverse_of: :followed
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   class << self
     def digest string
@@ -65,6 +74,22 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.user.password_reset_expired.hours.ago
+  end
+
+  def feed
+    Micropost.new_feed(following_ids << id).created_post_at
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
   end
 
   def forget

@@ -74,6 +74,13 @@ en:
     password_has_been_reset: "Password has been reset."
     can_not_reset_password: "Can not reset password"
     password_reset_has_expired: "Password reset has expired."
+    micropost: "micropost"
+    info:
+      view_my_profile: "View my profile"
+    micropost_form:
+      post: "Post"
+    user_info:
+      micropost: "Micropost"
   login:
     new_user: "New user?"
     login_danger: "Please login"
@@ -117,3 +124,28 @@ en:
     password: "Password"
     confirmation: "Confirmation"
     update_password: "Update password"
+  microposts:
+    destroy:
+      micropost_deleted: "Micropost deleted"
+    micropost:
+      ago: "ago"
+      delete: "Delete"
+      posted: "Posted"
+      you_sure: "You sure?"
+    save_micropost:
+      micropost_created: "Micropost created"
+      micropost_fail: "Micropost create fail"
+      should_be_less_than: "should be less than 5MB"
+    content:
+      placeholder: "Placeholder"
+  errors:
+    messages:
+      invalid_pic: "must be a valid image format"
+  user:
+    info:
+      view_my_profile: "View my profile"
+    stats:
+      follow: "Follow"
+      followers: "Followers"
+      following: "Following"
+      unfollow: "Unfollow"
