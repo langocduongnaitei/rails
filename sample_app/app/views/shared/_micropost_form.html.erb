@@ -1,0 +1,15 @@
+<%= form_for @micropost do |f| %>
+  <%= render "layouts/errors", object: f.object %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: t("microposts.content.placeholder") %>
+  </div>
+  <span class="image">
+    <%= f.file_field :image, accept: Settings.image.valid_input %>
+  </span>
+  <%= f.submit t(".post"), class: "btn btn-primary" %>
+<% end %>
+
+<script type="text/javascript">
+  const prompt = "<%= t "microposts.oversize_alert" %>"
+</script>
+<%= javascript_pack_tag "micropost", "data-turbolinks-track": "reload" %>

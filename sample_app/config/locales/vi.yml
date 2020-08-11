@@ -117,3 +117,14 @@ vi:
     password: "Mật khẩu"
     confirmation: "Nhập lại mật khẩu"
     update_password: "Cập nhật mật khẩu"
+  microposts:
+    destroy:
+      micropost_deleted: "Bài đăng nhỏ đã được xoá"
+    micropost:
+      ago: "trước"
+      delete: "Xoá"
+      posted: "Đã được đăng"
+      you_sure: "Bạn chắc chắn chưa?"
+    save_micropost:
+      micropost_created: "Bài đăng nhỏ đã được tạo"
+      micropost_fail: "Bài đăng nhỏ tạo thất bại"
