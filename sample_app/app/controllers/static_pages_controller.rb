@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
     return unless logged_in?
 
     @micropost = current_user.microposts.build
-    @feed_items = current_user.feed.created_post_at.page(params[:page]).per Settings.pagination
+    @feed_items = current_user.feed.page(params[:page]).per Settings.pagination
   end
   def help; end
 

@@ -141,3 +141,11 @@ en:
   errors:
     messages:
       invalid_pic: "must be a valid image format"
+  user:
+    info:
+      view_my_profile: "View my profile"
+    stats:
+      follow: "Follow"
+      followers: "Followers"
+      following: "Following"
+      unfollow: "Unfollow"
